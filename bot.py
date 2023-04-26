@@ -2,7 +2,6 @@ import os
 import random
 import discord
 import requests
-import pymongo
 
 anime_base_url = os.environ['ANIME_BASE_URL']
 anime_yuck_url = os.environ['ANIME_YUCK_URL']
