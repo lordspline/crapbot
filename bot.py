@@ -9,7 +9,7 @@ token = os.environ['BOT_TOKEN']
 cloudinary_base = os.environ["CLOUDINARY_BASE"]
 
 intents = discord.Intents.default()
-intents.message_content = True
+intents.messages = True
 
 client = discord.Client(intents=intents)
 
