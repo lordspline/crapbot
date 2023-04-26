@@ -8,7 +8,10 @@ anime_yuck_url = os.environ['ANIME_YUCK_URL']
 token = os.environ['BOT_TOKEN']
 cloudinary_base = os.environ["CLOUDINARY_BASE"]
 
-client = discord.Client()
+intents = discord.Intents.default()
+intents.message_content = True
+
+client = discord.Client(intents=intents)
 
 def get_help():
     m = "You have summoned the crap bot.\n\tcrap waifu: get waifu pics\n\tcrap doge help: get help with the crap doge commands"
